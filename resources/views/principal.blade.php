@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer>
     </script>
     <link rel="icon" href="{{ asset('img/icono.ico') }}">
     {{-- <script src="{{ asset('js/desactivarclickderecho.js') }}"></script> --}}
@@ -29,31 +28,17 @@
 
     <link rel="stylesheet" href="{{ asset('hover/hover-min.css') }}">
     <link rel="stylesheet" href="{{ asset('hover/hover.css') }}">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeacA8lAAAAAIiAfvQQbcF5DTHDRfIkI7SsP4kG"></script>
-    <script>
-        grecaptcha.ready(function() {
-            grecaptcha.execute('6LeacA8lAAAAAIiAfvQQbcF5DTHDRfIkI7SsP4kG', {
-                action: 'formulario'
-            });
-        });
-
-    </script>
+    
 
     <script src="{{ asset('js/ajax.js') }}"></script>
 
-    <style>
-        .active-link {
-            background-color: rgb(3, 151, 161);
-            color: #E15116;
-        }
-    </style>
 
     <title>@yield('title')</title>
 </head>
 
 <body>
     <div class="contentido">
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary" onclick="changeNavColor()">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger" onclick="changeNavColor()">
             <div class="container-fluid">
                 <a href="#"><img src="{{ asset('img/logotipo.png') }}" width="50px" height="50px"
                         alt="logotipo"></a>
@@ -66,12 +51,12 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a style="color: white" class="nav-link" href="#"><b><i class="fa-solid fa-house"></i>Inicio</b></a>
+                            <a style="color: white" class="nav-link" href="#"><b>Inicio</b></a>
                         </li><li class="nav-item">
-                            <a style="color: white" class="nav-link" href="#"><b><i class="fa-solid fa-house"></i>Acerca de</b></a>
+                            <a style="color: white" class="nav-link" href="#"><b>Acerca de</b></a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: white" class="nav-link" href="#"><b><i class="fa-solid fa-house"></i>ayuda</b></a>
+                            <a style="color: white" class="nav-link" href="#"><b>Ayuda</b></a>
                         </li>
                 </div>
             </div>
@@ -125,8 +110,7 @@
                 <h3>Generos</h3>
                 <hr>
                 <ul class="list-unstyled text-secondary">
-                    <li><a class="text-decoration-none link-secondary" href="#">Comedia
-                            canina</a></li>
+                    <li><a class="text-decoration-none link-secondary" href="#">Comedia</a></li>
                     <li><a class="text-decoration-none link-secondary" href="#">Acción</a>
                     </li>
                     <li><a class="text-decoration-none link-secondary" href="#">Terror</a></li>
@@ -139,7 +123,7 @@
                 <ul class="list-unstyled text-secondary">
 
                     <li>
-                    <li>Colonia palomares Ciudad de México</li>
+                    <li>Colonia Palomares Ciudad de México</li>
                     </li>
                 </ul>
             </div>
